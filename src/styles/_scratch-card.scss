@@ -1,0 +1,36 @@
+.scratch-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    touch-action: none;
+}
+
+.prize-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.result-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}

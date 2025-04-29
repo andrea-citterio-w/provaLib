@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratta e Vinci</title>
+    <link rel="stylesheet" href="styles/main.scss">
+</head>
+<body>
+    <div class="container">
+        <h1>Gratta e scopri se hai vinto</h1>
+        <p>Gratta all'interno del riquadro per scoprire se hai vinto il premio!</p>
+        
+        <div class="buttons-container">
+            <button id="reveal-btn" class="btn">Non riesci a grattare? Clicca qui!</button>
+            <button id="reset-btn" class="btn btn-reset">Ricomincia</button>
+        </div>
+        
+        <div class="scratch-container">
+            <div class="prize-image">
+                <img id="win-image" class="result-image" src="assets/bancomat-vinto.png" alt="Hai vinto!" style="display: none;">
+                <img id="lose-image" class="result-image" src="assets/bancomat-perso.png" alt="Hai perso!" style="display: none;">
+            </div>
+            <canvas id="scratch-canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="scripts/index.ts" type="module"></script>
+</body>
+</html>
