@@ -1,0 +1,73 @@
+// Stili base per il contenitore
+.scratch-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    touch-action: none;
+  }
+  
+  // Contenitore dell'immagine del premio
+  .prize-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  // Stile dell'immagine risultato
+  .result-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  // Stile del canvas
+  canvas.scratch-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  // Contenitore dei pulsanti
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  // Stile base per i pulsanti
+  .scratch-btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: #5649c0;
+    }
+  }
+  
+  // Stile specifico per il pulsante di reset
+  .scratch-reset-btn {
+    background-color: #ff7675;
+    
+    &:hover {
+      background-color: #e84393;
+    }
+  }

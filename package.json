@@ -1,21 +1,34 @@
 {
-    "name": "scratch-card-app",
+    "name": "scratch-card-lib",
     "version": "1.0.0",
-    "description": "Demo Gratta e vinci",
-    "source": "src/index.html",
+    "description": "Libreria per gratta e vinci digitale utilizzabile in Angular",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+      "dist/**/*",
+      "angular/**/*"
+    ],
     "scripts": {
-      "start": "parcel src/index.html --open",
-      "build": "parcel build src/index.html"
+      "clean": "rimraf dist",
+      "build": "npm run clean && tsc && copyfiles -u 1 src/**/*.scss dist/",
+      "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
-      "typescript",
-      "scratch-card"
+      "scratch-card",
+      "angular",
+      "typescript"
     ],
     "author": "",
     "license": "MIT",
     "devDependencies": {
-      "@parcel/transformer-sass": "^2.8.3",
-      "parcel": "^2.8.3",
-      "typescript": "^4.9.5"
+      "@angular/common": "^15.0.0",
+      "@angular/core": "^15.0.0",
+      "copyfiles": "^2.4.1",
+      "rimraf": "^4.1.2",
+      "typescript": "~4.9.5"
+    },
+    "peerDependencies": {
+      "@angular/common": ">=12.0.0",
+      "@angular/core": ">=12.0.0"
     }
   }
