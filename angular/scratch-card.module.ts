@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ScratchCardDirective } from './scratch-card.directive';
 
 @NgModule({
-  declarations: [ScratchCardDirective],
-  imports: [CommonModule],
+  declarations: [],
+  imports: [CommonModule, ScratchCardDirective],
   exports: [ScratchCardDirective]
 })
 export class ScratchCardModule {}

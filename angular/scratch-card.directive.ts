@@ -2,7 +2,8 @@ import { Directive, ElementRef, Input, OnInit, OnDestroy, Output, EventEmitter }
 import { ScratchCard } from '../src/scratch-card';
 
 @Directive({
-  selector: '[scratchCard]'
+  selector: '[scratchCard]',
+  standalone: true
 })
 export class ScratchCardDirective implements OnInit, OnDestroy {
   @Input() winImageSrc: string = '';
